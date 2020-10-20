@@ -1,0 +1,173 @@
+# Settings GUI File
+
+gui_sounds:
+  inventory_open:
+    enabled: true
+    sound: ENTITY_BAT_TAKEOFF
+  color_selected:
+    enabled: true
+    sound: BLOCK_NOTE_BLOCK_PLING
+  border_toggled:
+    enabled: true
+    sound: BLOCK_NOTE_BLOCK_HAT
+
+inventories:
+  settings:
+    size: 45
+    title: "Island Border Settings"
+
+    # Toggle border button
+    toggle_button:
+      slot: 40
+      enabled:
+        material: GREEN_STAINED_GLASS
+        amount: 1
+        display_name: "&aToggle Border"
+        lore:
+          - ""
+          - "&fYour island border is &a&lENABLED"
+          - ""
+          - "&eClick to disable the island border"
+      disabled:
+        material: RED_STAINED_GLASS
+        amount: 1
+        display_name: "&cToggle Border"
+        lore:
+          - ""
+          - "&fYour island border is &c&lDISABLED"
+          - ""
+          - "&eClick to enable the island border"
+      locked:
+        material: RED_STAINED_GLASS
+        amount: 1
+        display_name: "&cToggle Border"
+        lore:
+          - ""
+          - "&cYou don't have permission to toggle the border"
+
+    # Border color buttons
+    red_border_button:
+      slot: 21
+      unlocked:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&c&nRed Island Border"
+        lore:
+          - ""
+          - "&7Color: &c&lRED"
+          - ""
+          - "&eClick to set your border to Red"
+      locked:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&b&nBlue Island Border"
+        lore:
+          - ""
+          - "&cYou don't have permission to use this color"
+    green_border_button:
+      slot: 22
+      unlocked:
+        material: GREEN_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&a&nGreen Island Border"
+        lore:
+          - ""
+          - "&7Color: &a&lGREEN"
+          - ""
+          - "&eClick to set your border to Green"
+      locked:
+        material: GREEN_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&a&nGreen Island Border"
+        lore:
+          - ""
+          - "&cYou don't have permission to use this color"
+    blue_border_button:
+      slot: 23
+      unlocked:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&b&nBlue Island Border"
+        lore:
+          - ""
+          - "&7Color: &b&lBLUE"
+          - ""
+          - "&eClick to set your border to Blue"
+      locked:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&b&nBlue Island Border"
+        lore:
+          - ""
+          - "&cYou don't have permission to use this color"
+
+    # Filler/info items
+    filler_items:
+      '1':
+        material: PAPER
+        amount: 1
+        display_name: "&e&lWhat is this?"
+        lore:
+          - ""
+          - "&fHere you can select your very own island"
+          - "&fborder color or toggle its visibility."
+          - ""
+          - "&d&lNOTE: &7These settings only apply to"
+          - "&7you, they do not affect other players."
+        slots:
+          - 44
+      '2':
+        material: BLACK_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&r"
+        lore: {}
+        slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 17
+          - 18
+          - 26
+          - 27
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 41
+          - 42
+          - 43
+      '3':
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        display_name: "&r"
+        lore: {}
+        slots:
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34

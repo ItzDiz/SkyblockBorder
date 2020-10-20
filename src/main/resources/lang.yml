@@ -1,0 +1,29 @@
+# Language file
+
+messages:
+  config_reload: "&6&l[!]&r &eThe configuration files have been reloaded in &f%time%ms&e."
+  invalid_player: "&c&l[!]&r &cThe player &f%player% &cis invalid or offline."
+  invalid_color: "&c&l[!]&r &cThe color &f%color% &cis invalid. Valid colors are RED, GREEN or BLUE."
+  invalid_toggle_value: "&c&l[!]&r &cError with '&f%value%&c'. You must specify either &fTRUE &cor &fFALSE."
+
+  border_already_selected: "&c&l[!]&r &cYou already have your border set to this color."
+  border_not_enabled: "&c&l[!]&r &cYou need to enable the island border to select a color."
+  cooldown_active: "&c&l[!]&r &cYou must wait &f%time% seconds &cbefore you can do this again."
+
+  red_border_selected: "&6&l[!]&r &eYou have selected the &c&lRED&r &eisland border color."
+  green_border_selected: "&6&l[!]&r &eYou have selected the &a&lGREEN&r &eisland border color."
+  blue_border_selected: "&6&l[!]&r &eYou have selected the &b&lBLUE&r &eisland border color."
+  other_player_color_set: "&6&l[!]&r &eYou have set a &f%color% &eisland border color for &f%player%&e."
+
+  border_toggle_on: "&6&l[!]&r &eYou have &a&nenabled&r &ethe island border."
+  border_toggle_off: "&6&l[!]&r &eYou have &c&ndisabled&r &ethe island border."
+  other_player_border_toggled: "&6&l[!]&r &eYou have &f%value%&e the island border for &f%player%&e."
+
+  border_info_player:
+    - ""
+    - "&3&lIsland Border Info"
+    - ""
+    - "  &fPlayer: &b%player%"
+    - "  &fEnabled: &b%enabled%"
+    - "  &fColor: &b%color%"
+    - ""

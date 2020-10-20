@@ -1,0 +1,13 @@
+# Skyblock Border
+# Author: ItsLewizzz (https://github.com/ItsLewizzz)
+# Copyright Lewis D 2020. All rights reserved.
+
+settings:
+  gui_enabled: true
+  cooldowns:
+    change_color:
+      enabled: false
+      time: 30
+    toggle_border:
+      enabled: false
+      time: 10

@@ -1,0 +1,74 @@
+name: ${project.name}
+version: ${project.version}
+description: Create visual border on each island of your SkyBlock!
+author: ItsLewizzz
+softdepend: [ASkyBlock, AcidSkyblock, BentoBox, USkyBlock]
+api-version: 1.13
+website: https://lewisdev.fun
+main: fun.lewisdev.skyblockborder.SkyblockBorder
+
+commands:
+  skyblockborder:
+    description: SkyBlockBorder command for users
+    aliases: [sbb, border, skyborder, isborder]
+    
+permissions:
+  skyblockborder.*:
+    description: Gives access to all SkyblockBorder commands
+    children:
+      skyblockborder.comamnd.help: true
+      skyblockborder.command.color: true
+      skyblockborder.command.color.others: true
+      skyblockborder.command.toggle: true
+      skyblockborder.command.toggle.others: true
+      skyblockborder.command.info: true
+      skyblockborder.command.reload: true
+      skyblockborder.cooldown.bypass: true
+      skyblock.border.*: true
+  skyblockborder.command.help:
+    description: Allows you to view the help message
+    default: op
+  skyblockborder.command.info:
+    description: Allows you to view information about a players settings
+    default: op
+  skyblockborder.command.toggle:
+    description: Allows you to set your border visibility via command
+    default: op
+  skyblockborder.command.toggle.others:
+    description: Allows you to set others border visibility via command
+    default: op
+    children:
+      skyblockborder.command.color: true
+  skyblockborder.command.color:
+    description: Allows you to set your color via command
+    default: op
+  skyblockborder.command.color.others:
+    description: Allows you to set others color via command
+    default: op
+    children:
+      skyblockborder.command.color: true
+  skyblockborder.command.reload:
+    description: Allows you to reload the plugin configuration
+    default: op
+  skyblock.border.*:
+    description: Allows you access to all border colors and toggle ability
+    children:
+      skyblockborder.border.red: true
+      skyblockborder.border.green: true
+      skyblockborder.border.blue: true
+      skyblockborder.border.toggle: true
+  skyblockborder.border.red:
+    description: Allows you to set your island border red
+    default: op
+  skyblockborder.border.green:
+    description: Allows you to set your island border green
+    default: op
+  skyblockborder.border.blue:
+    description: Allows you to set your island border blue
+    default: true
+  skyblockborder.border.toggle:
+    description: Allows you to toggle visibility of your island border
+    default: op
+  skyblockborder.cooldown.bypass:
+    description: Allows you to bypass the cooldown feature
+    default: op
